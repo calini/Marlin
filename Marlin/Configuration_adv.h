@@ -653,7 +653,7 @@
 
 //#define SENSORLESS_BACKOFF_MM  { 2, 2 }     // (mm) Backoff from endstops before sensorless homing
 
-// TODO Note: SKR Mini Config sets values as:
+// Note: SKR Mini Config sets values as:
 // #define HOMING_BUMP_MM      { 0, 0, 2 }
 #define HOMING_BUMP_MM      { 5, 5, 2 }       // (mm) Backoff from endstops after first bump
 #define HOMING_BUMP_DIVISOR { 2, 2, 4 }       // Re-Bump Speed Divisor (Divides the Homing Feedrate)
@@ -1340,7 +1340,7 @@
    *
    * :[ 'LCD', 'ONBOARD', 'CUSTOM_CABLE' ]
    */
-  //#define SDCARD_CONNECTION ONBOARD
+  #define SDCARD_CONNECTION ONBOARD
 
 #endif // SDSUPPORT
 
@@ -1652,11 +1652,11 @@
  *
  * See https://marlinfw.org/docs/features/lin_advance.html for full instructions.
  */
-// TODO calibrate; Note: SKR Mini Config defaults to LIN_ADVANCE_K 0.0
+// TODO calibrate; Note: Default config is LIN_ADVANCE_K 0.22
 #define LIN_ADVANCE
 #if ENABLED(LIN_ADVANCE)
   //#define EXTRA_LIN_ADVANCE_K // Enable for second linear advance constants
-  #define LIN_ADVANCE_K 0.22    // Unit: mm compression per 1mm/s extruder speed
+  #define LIN_ADVANCE_K 0.0    // Unit: mm compression per 1mm/s extruder speed
   //#define LA_DEBUG            // If enabled, this will generate debug information output over USB.
   #define EXPERIMENTAL_SCURVE   // Enable this option to permit S-Curve Acceleration
 #endif
@@ -1794,7 +1794,7 @@
 //
 // G2/G3 Arc Support
 //
-// TODO decide if enabling is worth it
+// TODO disable if space is an issue
 //#define ARC_SUPPORT               // Disable this feature to save ~3226 bytes
 #if ENABLED(ARC_SUPPORT)
   #define MM_PER_ARC_SEGMENT      1 // (mm) Length (or minimum length) of each arc segment
