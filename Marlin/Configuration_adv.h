@@ -1652,7 +1652,7 @@
  *
  * See https://marlinfw.org/docs/features/lin_advance.html for full instructions.
  */
-// TODO calibrate; Note: Default config is LIN_ADVANCE_K 0.22
+// TODO: redo with Prusament; Cheap Filament looks good at 0.08-0.07 Note: Default value is 0.22
 #define LIN_ADVANCE
 #if ENABLED(LIN_ADVANCE)
   //#define EXTRA_LIN_ADVANCE_K // Enable for second linear advance constants
