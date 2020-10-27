@@ -990,7 +990,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -44, -6, -1.6 } // TODO: fine tume Z offset value
+#define NOZZLE_TO_PROBE_OFFSET { -43.8, -7.0, -1.735 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1239,7 +1239,6 @@
 //#define AUTO_BED_LEVELING_3POINT
 //#define AUTO_BED_LEVELING_LINEAR
 #define AUTO_BED_LEVELING_BILINEAR
-// TODO figure bed levelling out; Note: SKR Mini 2.0 config enables MESH_BED_LEVELING
 // #define AUTO_BED_LEVELING_UBL
 // #define MESH_BED_LEVELING
 
